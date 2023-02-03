@@ -6,9 +6,9 @@ import {Button, Card, CardBody, CardHeader, CardTitle, Col, Input, Label, Row} f
 
 function HookUseState(){
 
-    // let current = 0;
+    let current = 0;
 
-    // const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0);
     const [user, setUser] = useState(CollegeData);
     const [isCreate, setIsCreate] = useState(true);
     // console.log(user);
@@ -23,16 +23,18 @@ function HookUseState(){
 
     return ( 
     <>
-        {/* <h2>Counter {count} </h2>
-        <button onClick={()=>{
+        <div className="counterOuter">
+        <h2>Counter {count} </h2>
+        <Button color="danger" onClick={()=>{
            setCount(current);
-        }} >Current</button>
-        <button onClick={()=>{
+        }} >Current</Button> 
+        <Button color="primary" onClick={()=>{
            setCount(count + 1);
-        }} >Increment</button>
-        <button onClick={()=>{
+        }} >Increment</Button> 
+        <Button color="secondary" onClick={()=>{
            setCount(count - 1);
-        }} >Decrement</button> */}
+        }} >Decrement</Button>
+        </div>
 {isCreate? (
     <Card>
             <CardHeader className="display">

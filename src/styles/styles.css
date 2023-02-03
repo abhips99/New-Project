@@ -11,3 +11,9 @@
     justify-content: space-evenly;
     margin-bottom: 20px;
 }
+.counterOuter{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+}

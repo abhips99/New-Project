@@ -17,6 +17,9 @@
 .input-container {
     padding-left: 128px;
 }
+.input-container span{
+    color: red;
+}
 
 .input-container input {
     padding: 8px;

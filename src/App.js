@@ -1,6 +1,6 @@
 import "./styles/styles.css"
 // import ComponentA from "./Component/props/ComponentA";
-// import HookUseState from "./Component/hooks/HookUseState";
+import HookUseState from "./Component/hooks/HookUseState";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Calculator from "./Component/calculator/caladd";
 
@@ -26,7 +26,8 @@ return (
   {/* <h2 className="heading">App {insName}</h2>
   <p>{text}</p> */}
   <p>Hello {text}</p>
-  {/* <HookUseState /> */}
+  {/* <ComponentA /> */}
+  <HookUseState />
   <Calculator />
   </>  
 
