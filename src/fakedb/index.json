@@ -1,0 +1,112 @@
+[
+  {
+    "collegeName": "DU",
+    "collegeID": 101,
+    "city": "Delhi",
+    "feeStructure": {
+      "btech": "1200000/annum",
+      "bca": "100000/annum",
+      "mca": "1100000/annum",
+      "mba": "150000/annum"
+    }
+  },
+  {
+    "collegeName": "GU",
+    "collegeID": 102,
+    "city": "Gr Noida",
+    "feeStructure": {
+      "btech": "1400000/annum",
+      "bca": "120000/annum",
+      "mca": "1300000/annum",
+      "mba": "180000/annum"
+    }
+  },
+  {
+    "collegeName": "NIU",
+    "collegeID": 103,
+    "city": "Gr Noida",
+    "feeStructure": {
+      "btech": "100000/annum",
+      "bca": "80000/annum",
+      "mca": "900000/annum",
+      "mba": "120000/annum"
+    }
+  },
+  {
+    "collegeName": "AKG",
+    "collegeID": 104,
+    "city": "Ghaziabad",
+    "feeStructure": {
+      "btech": "1300000/annum",
+      "bca": "110000/annum",
+      "mca": "1200000/annum",
+      "mba": "150000/annum"
+    }
+  },
+  {
+    "collegeName": "IMS",
+    "collegeID": 105,
+    "city": "Ghaziabad",
+    "feeStructure": {
+      "btech": "1300000/annum",
+      "bca": "110000/annum",
+      "mca": "1200000/annum",
+      "mba": "140000/annum"
+    }
+  },
+  {
+    "collegeName": "Jaypee Institute",
+    "collegeID": 106,
+    "city": "Noida",
+    "feeStructure": {
+      "btech": "1800000/annum",
+      "bca": "150000/annum",
+      "mca": "1600000/annum",
+      "mba": "200000/annum"
+    }
+  },
+  {
+    "collegeName": "GL Bajaj",
+    "collegeID": 107,
+    "city": "Gr Noida",
+    "feeStructure": {
+      "btech": "1000000/annum",
+      "bca": "90000/annum",
+      "mca": "110000/annum",
+      "mba": "150000/annum"
+    }
+  },
+  {
+    "collegeName": "SRM",
+    "collegeID": 108,
+    "city": "Chennai",
+    "feeStructure": {
+      "btech": "200000/annum",
+      "bca": "140000/annum",
+      "mca": "1300000/annum",
+      "mba": "230000/annum"
+    }
+  },
+  {
+    "collegeName": "MIET",
+    "collegeID": 109,
+    "city": "Gr Noida",
+    "feeStructure": {
+      "btech": "1200000/annum",
+      "bca": "100000/annum",
+      "mca": "1100000/annum",
+      "mba": "150000/annum"
+    }
+  },
+  {
+    "collegeName": "Galgotia Institute",
+    "collegeID": 110,
+    "city": "Gr Noida",
+    "feeStructure": {
+      "btech": "1600000/annum",
+      "bca": "110000/annum",
+      "mca": "1300000/annum",
+      "mba": "180000/annum"
+    }
+  }
+]

@@ -1,0 +1,45 @@
+.outer{
+    background-color: royalblue;
+    margin: 50px auto;
+    padding: 50px;
+}
+.outer h2{
+    text-align: center;
+    padding-bottom: 16px;
+}
+.formContainer {
+    width: 500px;
+    margin: auto;
+    background-color: #bbd9f1;
+    padding: 24px;
+}
+
+.input-container {
+    padding-left: 128px;
+}
+
+.input-container input {
+    padding: 8px;
+    width: 248px;
+}
+
+.btn-submit {
+    border: none;
+    margin-left: 128px;
+    padding: 8px;
+    width: 248px;
+    background-color: #08082d;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-chng-text {
+    border: none;
+    height: 48px;
+    padding: 10px;
+    margin-top: 9px;
+    font-size: 14px;
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+}

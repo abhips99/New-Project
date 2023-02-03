@@ -1,0 +1,13 @@
+.heading{
+    color: blue;
+}
+.display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttonClass{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
