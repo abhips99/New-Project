@@ -39,13 +39,13 @@ const calAdd = () =>{
             <form action="" className="formContainer">
               <div className="input-container">
                 <label form="">Number One</label> <br />
-                <input type="text" id="input1"  /> <br />
+                <input type="number" id="input1"  /> <br />
                 <span id="error"></span>
               </div>
               <br />
               <div className="input-container">
                 <label form="">Number Two</label> <br />
-                <input type="text" id="input2" /> <br />
+                <input type="number" id="input2" /> <br />
                 <span id="error1"></span>
               </div>
                <br />

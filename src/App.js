@@ -2,7 +2,7 @@ import "./styles/styles.css"
 // import ComponentA from "./Component/props/ComponentA";
 import HookUseState from "./Component/hooks/HookUseState";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Calculator from "./Component/calculator/caladd";
+// import Calculator from "./Component/calculator/caladd";
 
 function App () {
   // let insName = "piller";
@@ -28,7 +28,7 @@ return (
   <p>Hello {text}</p>
   {/* <ComponentA /> */}
   <HookUseState />
-  <Calculator />
+  {/* <Calculator /> */}
   </>  
 
 );
