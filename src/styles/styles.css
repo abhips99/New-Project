@@ -27,3 +27,8 @@
     color: red;
     text-align: center;
 }
+.calculator{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}

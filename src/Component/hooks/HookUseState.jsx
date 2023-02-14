@@ -40,7 +40,6 @@ const HookUseState  = () =>{
         const data = user.filter((clg)=>{
             return clg.collegeID === id
         });
-        console.log(data[0]);
         setCollegeObj({
             clgId : data[0].collegeID,
             clgName : data[0].collegeName,

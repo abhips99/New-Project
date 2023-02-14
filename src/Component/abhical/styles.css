@@ -1,0 +1,24 @@
+.wrapper{
+    width: 50%;
+    margin: 100px auto;
+    padding: 0 100px;
+}
+.wrapper h2{
+    color: aqua;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.inputFiled{
+    padding-bottom: 16px;
+}
+.inputFiled span{
+    color: red;
+    font-size: 12px;
+}
+.wrapper button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 8px;
+}
