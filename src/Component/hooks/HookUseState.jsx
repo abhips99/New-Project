@@ -4,7 +4,8 @@ import { MdDelete } from "react-icons/md";
 import {AiFillEye} from "react-icons/ai";
 import {Button, Card, CardBody, CardHeader, CardTitle, Col, Input, Label, Row} from "reactstrap";
 
-function HookUseState(){
+
+const HookUseState  = () =>{
 
     let current = 0;
 
@@ -12,6 +13,7 @@ function HookUseState(){
     const [user, setUser] = useState(CollegeData);
     const [isView, setIsView] = useState(true);
     const [isCreate, setIsCreate] = useState(true);
+    const [error, setError] = useState(false);
     const [collegeObj, setCollegeObj] = useState({
         clgName : "",
         clgId : "",
@@ -49,33 +51,37 @@ function HookUseState(){
 
     const handleSubmit= (e) =>{
         e.preventDefault();
+        if (clgId && clgName && city && btech !== ""){ 
 
-        if (!isView){
-            const newObj = {
-                collegeName: clgName,
-                collegeID: clgId,
-                city,
-                feeStructure : {
-                    btech: btech,
-                }
-            };
-            const editData = user.filter((id)=>{
-                return id.collegeID !== clgId;
-            });
-            setUser([...editData, newObj])
+            if (!isView){
+                const newObj = {
+                    collegeName: clgName,
+                    collegeID: clgId,
+                    city,
+                    feeStructure : {
+                        btech: btech,
+                    }
+                };
+                const editData = user.filter((clg)=>{
+                    return clg.collegeID !== clgId;
+                });
+                setUser([...editData, newObj])
+            } else {
+                const newObj = {
+                    collegeName: clgName,
+                    collegeID: clgId,
+                    city,
+                    feeStructure : {
+                        btech: btech,
+                    }
+                };
+                setUser([...user, newObj])
+            }
+            setIsCreate(true)
+            setIsView(true)
         } else {
-            const newObj = {
-                collegeName: clgName,
-                collegeID: clgId,
-                city,
-                feeStructure : {
-                    btech: btech,
-                }
-            };
-            setUser([...user, newObj])
+            setError(true)
         }
-        setIsCreate(true)
-        setIsView(true)
     };
 
     return ( 
@@ -96,7 +102,12 @@ function HookUseState(){
     <Card>
             <CardHeader className="display">
                 <CardTitle>College Data</CardTitle>
-                <Button color="primary" onClick={() => {setIsCreate(false)}}>Create</Button>
+                <Button color="primary" onClick={() => {setIsCreate(false); setIsView(true); setError(false); setCollegeObj({
+                clgName : "",
+                clgId : "",
+                city : "",
+                btech : ""
+            })}}>Create</Button>
             </CardHeader>
         <table className="table">
             <thead className="table-dark">
@@ -132,31 +143,36 @@ function HookUseState(){
                 }
             </tbody>
         </table>
-        </Card>
+    </Card>
 ) : (
     <Card>
         <CardHeader>
             <CardTitle>Create Page</CardTitle>
+            {/* <div className="error">{error && <>{error}</>}</div> */}
         </CardHeader>
         <CardBody>
             <Row sm={2}>
                 <Col>
                 <Label>College ID</Label>
-                <Input name="clgId" value={clgId} onChange={handleChange} readOnly={!isView? true : false} />
+                <Input name="clgId" value={clgId} onChange={handleChange} readOnly={!isView ? true : false}  />
+                {error && clgId === "" ? <span className="error">Please Enter Vaild Input</span> : "" }
                 </Col>
                 <Col>
                 <Label>College Name</Label>
                 <Input name="clgName" value={clgName} onChange={handleChange}/>
+                {error && clgName === "" ? <span className="error">Please Enter Vaild Input</span> : ""}
                 </Col>
             </Row>
             <Row sm={2}>
                 <Col>
                 <Label> College City</Label>
                 <Input name="city" value={city} onChange={handleChange}/>
+                {error && city === "" ? <span className="error">Please Enter Vaild Input</span> : ""}
                 </Col>
                 <Col>
                 <Label>Fee Sturcture</Label>
                 <Input name="btech" value={btech} onChange={handleChange}/>
+                 {error && btech === "" ? <span className="error">Please Enter Vaild Input</span> : ""}
                 </Col>
             </Row>
         </CardBody>
@@ -170,6 +186,7 @@ function HookUseState(){
             })}}>Cancel</Button>
         </Row>
     </Card>
+
 )
 }
         

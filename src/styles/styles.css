@@ -1,3 +1,9 @@
+.helloHeading{
+    padding: 20px;
+    font-size: 24px;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
 .heading{
     color: blue;
 }
@@ -16,4 +22,8 @@
     gap: 20px;
     align-items: center;
     padding: 50px;
+}
+.error{
+    color: red;
+    text-align: center;
 }

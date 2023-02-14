@@ -25,7 +25,7 @@ return (
   <>
   {/* <h2 className="heading">App {insName}</h2>
   <p>{text}</p> */}
-  <p>Hello {text}</p>
+  <p className="helloHeading">Hello {text}</p>
   {/* <ComponentA /> */}
   <HookUseState />
   {/* <Calculator /> */}
