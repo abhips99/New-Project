@@ -24,15 +24,15 @@ const DivideCal = () =>{
             setOutput("");
         } else {
             const Data = parseInt(inputOne) / parseInt(inputSec);
-            setOutput(Data.toFixed(1));
-        }
+            setOutput(Data.toFixed(2));
+        }   
         setIsError(true)
 
     }
 
     return (
         <div className="wrapper">
-            <h2>Output: {output}</h2>
+            <h2>Output: <span className="output">{output}</span></h2>
             <div className="inputFiled">
                 <Input type="number" onChange={handleChangeOne} />
                 {isError && inputOne === "" ? <span>Please Enter Vaild Input</span> : "" }
