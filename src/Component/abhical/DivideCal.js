@@ -24,7 +24,7 @@ const DivideCal = () =>{
             setOutput("");
         } else {
             const Data = parseInt(inputOne) / parseInt(inputSec);
-            setOutput(Data);
+            setOutput(Data.toFixed(1));
         }
         setIsError(true)
 
