@@ -26,9 +26,18 @@
 .error{
     color: red;
     text-align: center;
+    font-size: 12px;
 }
 .calculator{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+.editbtn{
+    background-color: blue !important;
+}
+.createbtn{ 
+    background-color: #fdf0e7 !important;
+    border: 2px solid !important;
+    color: #ef6e0b !important;
 }

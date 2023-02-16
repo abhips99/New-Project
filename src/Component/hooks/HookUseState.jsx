@@ -112,8 +112,8 @@ const HookUseState  = () =>{
             <thead className="table-dark">
                 <tr>
                     <th>S No.</th>
-                    <th>College Name</th>
                     <th>College ID</th>
+                    <th>College Name</th>
                     <th>College City</th>
                     <th>Fee Structure</th>
                     <th>Action</th>
@@ -125,8 +125,8 @@ const HookUseState  = () =>{
                         return (
                             <tr key={u.collegeID}>
                                 <td>{i + 1}</td>
-                                <td>{u.collegeName}</td>
                                 <td>{u.collegeID}</td>
+                                <td>{u.collegeName}</td>
                                 <td>{u.city}</td>
                                 <td>{u.feeStructure.btech}</td>
                                 <td>
@@ -176,7 +176,7 @@ const HookUseState  = () =>{
             </Row>
         </CardBody>
         <Row sm={6} className="buttonClass">
-            <Button color="primary" onClick={handleSubmit}>{!isView ? "Edit" : "Create"}</Button>
+            <Button className={!isView ? "editbtn" : "createbtn"} onClick={handleSubmit}>{!isView ? "Edit" : "Create"}</Button>
             <Button color="secondary" onClick={()=>{setIsCreate(true); setIsView(true); setCollegeObj({
                 clgName : "",
                 clgId : "",
