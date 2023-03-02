@@ -1,0 +1,29 @@
+.loginWrapper{
+    width: 50%;
+    margin: 0 auto;
+}
+.loginWrapper h2{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #007bff;
+}
+.loginWrapper input{
+    margin-bottom: 20px;
+}
+.loginWrapper button{
+    margin: 0 auto;
+    display: block;
+    width: 25%;
+    color: #fff;
+    font-weight: 600;
+    background-color: #ef6e0b;
+    font-size: 18px;
+    letter-spacing: .01em;
+    border: none;
+    height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.loginWrapper button:hover{
+    background-color: #ef6e0b;
+}

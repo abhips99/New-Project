@@ -150,27 +150,27 @@ const HookUseState  = () =>{
             {/* <div className="error">{error && <>{error}</>}</div> */}
         </CardHeader>
         <CardBody>
-            <Row sm={2}>
+            <Row sm={2} className="padding">
                 <Col>
                 <Label>College ID</Label>
-                <Input name="clgId" value={clgId} onChange={handleChange} readOnly={!isView ? true : false}  />
+                <Input placeholder="College ID" name="clgId" value={clgId} onChange={handleChange} readOnly={!isView ? true : false}  />
                 {error && clgId === "" ? <span className="error">Please Enter Vaild Input</span> : "" }
                 </Col>
                 <Col>
                 <Label>College Name</Label>
-                <Input name="clgName" value={clgName} onChange={handleChange}/>
+                <Input placeholder="College Name" name="clgName" value={clgName} onChange={handleChange}/>
                 {error && clgName === "" ? <span className="error">Please Enter Vaild Input</span> : ""}
                 </Col>
             </Row>
-            <Row sm={2}>
+            <Row sm={2} className="padding">
                 <Col>
                 <Label> College City</Label>
-                <Input name="city" value={city} onChange={handleChange}/>
+                <Input placeholder="College City" name="city" value={city} onChange={handleChange}/>
                 {error && city === "" ? <span className="error">Please Enter Vaild Input</span> : ""}
                 </Col>
                 <Col>
                 <Label>Fee Sturcture</Label>
-                <Input name="btech" value={btech} onChange={handleChange}/>
+                <Input placeholder="Fee Sturcture" name="btech" value={btech} onChange={handleChange}/>
                  {error && btech === "" ? <span className="error">Please Enter Vaild Input</span> : ""}
                 </Col>
             </Row>

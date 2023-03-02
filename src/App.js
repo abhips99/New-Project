@@ -1,11 +1,13 @@
 import "./styles/styles.css"
 // import ComponentA from "./Component/props/ComponentA";
-import HookUseState from "./Component/hooks/HookUseState";
+// import HookUseState from "./Component/hooks/HookUseState";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AddCal from "./Component/abhical/AddCal";
-import MultiplyCal from "./Component/abhical/MultiplyCal";
-import SubstrackCal from "./Component/abhical/SubstrackCal";
-import DivideCal from "./Component/abhical/DivideCal";
+// import AddCal from "./Component/abhical/AddCal";
+// import MultiplyCal from "./Component/abhical/MultiplyCal";
+// import SubstrackCal from "./Component/abhical/SubstrackCal";
+// import DivideCal from "./Component/abhical/DivideCal";
+import Login from "./Component/LoginPage/Login";
+import SignUp from "./Component/SignupPage/SignUp";
 // import Calculator from "./Component/calculator/caladd";
 
 function App () {
@@ -31,13 +33,15 @@ return (
     <p>{text}</p> */}
     <p className="helloHeading">Hello {text}</p>
     {/* <ComponentA /> */}
-    <HookUseState />
-    <div className="calculator">
+    {/* <HookUseState /> */}
+    {/* <div className="calculator">
       <AddCal />
       <MultiplyCal />
       <SubstrackCal />
       <DivideCal />
-    </div>
+    </div> */}
+    <SignUp />
+    <Login />
     {/* <Calculator /> */}
   </>  
 );
