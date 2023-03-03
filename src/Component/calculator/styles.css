@@ -15,7 +15,10 @@
 }
 
 .input-container {
-    padding-left: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .input-container span{
     color: red;
@@ -26,9 +29,14 @@
     width: 248px;
 }
 
+.subbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn-submit {
     border: none;
-    margin-left: 128px;
     padding: 8px;
     width: 248px;
     background-color: #08082d;

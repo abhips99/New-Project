@@ -44,3 +44,13 @@
 .padding{
     padding-bottom: 16px;
 }
+.backHome{
+    display: flex;
+    justify-content: center;
+    color: green;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+.backHome:hover{
+    color: green;
+}

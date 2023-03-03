@@ -1,0 +1,26 @@
+.heading{
+    text-align: center;
+    padding: 40px;
+}
+.linkOuter{
+    padding: 10px;
+}
+.linkOuter a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+.contact{
+    padding-top: 40px;
+}
+.contact h4{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.buttonWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.buttonWrapper button{
+    width: 200px;
+}

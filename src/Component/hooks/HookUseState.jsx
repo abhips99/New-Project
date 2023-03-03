@@ -3,13 +3,11 @@ import CollegeData from "../../fakedb/index.json";
 import { MdDelete } from "react-icons/md";
 import {AiFillEye} from "react-icons/ai";
 import {Button, Card, CardBody, CardHeader, CardTitle, Col, Input, Label, Row} from "reactstrap";
+import { Link } from "react-router-dom"
 
 
 const HookUseState  = () =>{
 
-    let current = 0;
-
-    const [count, setCount] = useState(0);
     const [user, setUser] = useState(CollegeData);
     const [isView, setIsView] = useState(true);
     const [isCreate, setIsCreate] = useState(true);
@@ -85,18 +83,6 @@ const HookUseState  = () =>{
 
     return ( 
     <>
-        <div className="counterOuter">
-        <h2>Counter {count} </h2>
-        <Button color="danger" onClick={()=>{
-           setCount(current);
-        }} >Current</Button> 
-        <Button color="primary" onClick={()=>{
-           setCount(count + 1);
-        }} >Increment</Button> 
-        <Button color="secondary" onClick={()=>{
-           setCount(count - 1);
-        }} >Decrement</Button>
-        </div>
 {isCreate && isView ? (
     <Card>
             <CardHeader className="display">
@@ -188,6 +174,8 @@ const HookUseState  = () =>{
 
 )
 }
+
+<Link className="backHome" to="/">Back to Home page</Link>
         
     </>
     )

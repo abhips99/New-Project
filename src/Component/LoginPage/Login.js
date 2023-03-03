@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, Input, Label } from "reactstrap";
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 const Login = () =>{
@@ -21,7 +22,7 @@ const Login = () =>{
     };
 
     return (
-        <div className="loginWrapper">
+        <div className="container loginWrapper">
             <h2>Login Page</h2>
             <Label>Enter your Email or Mobile No.</Label>
             <Input type="text" onChange={handleChangeText} />
@@ -30,6 +31,7 @@ const Login = () =>{
             <Input type="password" onChange={handleChangePassword} />
 
             <Button onClick={handleSubmit}>Login</Button>
+            <Link className="backHome" to="/">Back to Home page</Link>
         </div>
     );
 

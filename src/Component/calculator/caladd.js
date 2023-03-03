@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import "./styles.css"
 
 
 
-const calAdd = () =>{
+const CalAdd = () =>{
 
   const addHandler = (e) =>{
     e.preventDefault();
@@ -34,25 +35,30 @@ const calAdd = () =>{
   };
 
     return (
-        <div className="outer">
+        <div className="container">
+          <div className="outer">
             <h2>Output: <span id="text"></span></h2>
             <form action="" className="formContainer">
-              <div className="input-container">
-                <label form="">Number One</label> <br />
-                <input type="number" id="input1"  /> <br />
-                <span id="error"></span>
-              </div>
-              <br />
-              <div className="input-container">
-                <label form="">Number Two</label> <br />
-                <input type="number" id="input2" /> <br />
-                <span id="error1"></span>
-              </div>
-               <br />
-              <button className="btn-submit" id="btn-add" type="submit" onClick={addHandler}>Add</button>
+                <div className="input-container">
+                  <label form="">Number One</label> <br />
+                  <input type="number" id="input1"  /> <br />
+                  <span id="error"></span>
+                </div>
+                <br />
+                <div className="input-container">
+                  <label form="">Number Two</label> <br />
+                  <input type="number" id="input2" /> <br />
+                  <span id="error1"></span>
+                </div>
+                <br />
+                <div className="subbutton">
+                  <button className="btn-submit" id="btn-add" type="submit" onClick={addHandler}>Add</button>
+                </div>
             </form>
-      </div>
+          </div> 
+          <Link className="backHome" to="/">Back to Home page</Link>
+        </div>
     );
 };
 
-export default calAdd;
+export default CalAdd;
