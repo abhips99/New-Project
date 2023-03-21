@@ -5,30 +5,20 @@ import  "./styles.css";
 
 const Home = () =>{
     return(
-        <div>
+        <div className="MainOuter">
             <h2 className="heading">Learn React Js</h2>
-            <div className="container">
-                <h4>Some topics</h4>
-                <div className="linkOuter">
-                    <Link to="/javacalculator">Java Script Calculator</Link>
-                </div>
-                <div className="linkOuter">
-                    <Link to="/reactcalculator">React Calculator</Link>
-                </div>
-                <div className="linkOuter">
-                    <Link to="/counter">Counter</Link>
-                </div>
-                <div className="linkOuter">
-                    <Link to="/usehookstate">Use HookState</Link>
-                </div>
-                <div className="linkOuter">
-                    <Link to="/useeffect">Use Effect</Link>
-                </div>
-                <div className="linkOuter">
-                    <Link to="/usecontext">Use Contex</Link>
-                </div>
-                <div className="linkOuter">
-                    <Link to="/usereducer">Use Reducer</Link>
+            <div className="container homeOuter">
+                <h2>Some topics</h2>
+                <div className="topicOuter">
+                    <Link className="linkOuter" to="/javacalculator">Java Script Calculator</Link>
+                    <Link className="linkOuter" to="/reactcalculator">React Calculator</Link>
+                    <Link className="linkOuter" to="/counter">Counter</Link>
+                    <Link className="linkOuter" to="/props">Props</Link>
+                    <Link className="linkOuter" to="/usehookstate">Hook Use State</Link>
+                    <Link className="linkOuter" to="/useeffect">Hook Use Effect</Link>
+                    <Link className="linkOuter" to="/usecontext">Hook Use Context</Link>
+                    <Link className="linkOuter" to="/usereducer">Hook Use Reducer</Link>
+                    <Link className="linkOuter" to="/usecallback">Hook Use CallBack</Link>
                 </div>
                 <div className="contact">
                     <h4>Contact Us</h4>

@@ -174,9 +174,7 @@ const HookUseState  = () =>{
 
 )
 }
-
-<Link className="backHome" to="/">Back to Home page</Link>
-        
+{isCreate && isView ? <Link className="backHome" to="/">Back to Home page</Link> : ""}
     </>
     )
 }

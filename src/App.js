@@ -1,6 +1,5 @@
 import "./styles/styles.css"
 // import ComponentA from "./Component/props/ComponentA";
-// import HookUseState from "./Component/hooks/HookUseState";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Routing from "./router/routing";
 
